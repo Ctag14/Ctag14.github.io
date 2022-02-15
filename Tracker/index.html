@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/50750888a7.js" crossorigin="anonymous"></script> 
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage</title>
+</head>  
+
+<body>
+    <header>
+        <nav class= 'navbar'>
+                <div class="navbar__title"> My Workout Tracker</div>
+            <div class="toggle">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <lable for = "checkbox" class= "checkbox__label">
+                    <i class="fa-solid fa-moon moon"></i>
+                    <i class="fa-solid fa-sun sun"></i>
+                    <div class="ball"></div>
+                </lable>
+            </div>
+        </nav>
+    </header>    
+    <div class="container">
+        <a href="saved-workouts/index.html"class="container__btn">
+            <p class="container__btn-txt">My Workouts</p>
+            <i class="container__btn-icon fas fa-dumbbell"></i>
+        </a>
+        <div class="container__line"></div>
+        <a href = "/new-workout.html" class="container__btn" id="newWorkout">
+            <p class="container__btn-txt">New Workout</p>
+            <i class="container__btn-icon fas fa-plus"></i>
+        </a>
+      
+    </div>
+
+    
+</body>
+</html>

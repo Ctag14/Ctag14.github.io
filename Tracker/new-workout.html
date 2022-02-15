@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/50750888a7.js" crossorigin="anonymous"></script>   
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>New Workout</title>
+</head>  
+
+<body>
+    <header>
+        <nav class= 'navbar'>
+            <div class="navbar__title"> Create a New Workout</div>
+                <div class="navbar__dropdown-options">
+                    <a href="index.html" class="navbar__dropdown-option">Home</a>
+                    <a href='saved-workouts/index.html'class="navbar__dropdown-option">My Workouts</a>
+                </div> 
+            </div>
+            <div class="toggle">
+                <input type="checkbox" class="checkbox" id="checkbox">
+                <lable for = "checkbox" class= "checkbox__label">
+                    <i class="fa-solid fa-moon moon"></i>
+                    <i class="fa-solid fa-sun sun"></i>
+                    <div class="ball"></div>
+                </lable>
+            </div>
+        </nav>
+    </header>    
+    <div class="myWorkout">
+        <div>
+            <input class = 'workoutName' type="text" name='workoutName' placeholder = "My Workout"required>
+        </div>
+        <div class="routine"></div>
+        <div class="buttons">
+            <button class="addexercise">ADD EXERCISE</button>
+            <button class="save">SAVE WORKOUT</button>
+        </div>
+    </div>
+             
+    <div class="modal">
+        <div class= "modal__bg"></div>
+        <form class="exercise">
+            <div class="exercise__name">
+                <input type="text" name = 'exerciseName' placeholder="Exercise" required>
+            </div>
+            <div class="exercise__sets">
+                <div class="exercise__set">
+                    <div>
+                        <label for="weight">Weight</label><br>
+                        <input type="text" name='weight' required>
+                    </div>
+                        
+                    <div>
+                        <label for="reps">Reps</label><br>
+                        <input type="text" name='reps' required>
+                    </div>
+                    <div>
+                        <label for="rpe">RPE</label><br>
+                        <input type="text" name='rpe' required>
+                    </div>
+                </div>
+            </div>
+            <div class="exercise__buttons">
+                <button type= 'button'class="exercise__addset">
+                    <p>ADD SET</p>
+                </button>
+                <button type= 'button'class="exercise__removeset">
+                    <p>REMOVE SET</p>
+                </button>
+                <button type= 'submit' class="exercise__addtoworkout">
+                    <i class="fas fa-check"></i>
+                </button>
+                <button type= 'reset' class="exercise__cancel">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </form> 
+    </div> 
+    
+</body>
+</html>
