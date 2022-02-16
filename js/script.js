@@ -90,6 +90,7 @@ else {
 
     //On add exercise make modal visible
     $(document).on('click', '.addexercise', function() {
+        edit = false;
         $('.exercise').trigger('reset');
         $('.modal').addClass('show');
         let numSets= $('.exercise__set').length;
