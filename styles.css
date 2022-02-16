@@ -18,6 +18,7 @@ body {
     --hover-color:#40a9ff;
     --input-color:#444444;
     --exercise-bg:#212931;
+    --exercise-btn:#40a9ff;
 }
 .lightMode {
     --bg-color: aliceblue;
@@ -26,6 +27,7 @@ body {
     --smalltxt-color:black;
     --hover-color:#cfdde4;
     --exercise-bg:#40a9ff;
+    --exercise-btn:#444444;
     --input-color:#cfdde4;
 
 }
@@ -360,7 +362,7 @@ body {
     outline: none;
 }
 .exercise__removeset > p{
-    color: #40a9ff;
+    color: var(--exercise-btn);
     opacity: 1;
     margin:0;
     font-weight: 500;
@@ -376,7 +378,7 @@ body {
     outline: none;
 }
 .exercise__addset > p{
-    color: #40a9ff;
+    color: var(--exercise-btn);
     opacity: 1;
     margin:0;
     font-weight: 500;
