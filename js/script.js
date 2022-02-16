@@ -269,9 +269,11 @@ else {
             workout.name = $('.myWorkout').find('[name="workoutName"]').val()
             if(workout.name === '' ) {
                 alert("Please Name Workout")
+                return;
             }
             if(workout.routine.length == 0){
                 alert("Please Add Exercises")
+                return;
             }
             let myWorkouts = JSON.parse(localStorage.getItem("myWorkouts")) || [];
             myWorkouts.push(workout);
