@@ -304,6 +304,7 @@ else {
         $('.workoutName').val(workout.name);
         let date = `${new Date(workout.date).toDateString()}`
         $('.myWorkout__date').append(date)
+        console.log(workout);
         showWorkout(workout);
         function showWorkout(workout) {
             let routine = workout.routine;
