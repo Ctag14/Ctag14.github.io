@@ -279,7 +279,7 @@ else {
             myWorkouts.push(workout);
             let workoutSerial = JSON.stringify(myWorkouts);
             localStorage.setItem("myWorkouts", workoutSerial);
-            window.location.href='/saved-workouts/index.html';
+            window.location.href='saved-workouts/index.html';
         }
         else {  
                 let myWorkouts = JSON.parse(localStorage.getItem("myWorkouts")) || [];
@@ -289,7 +289,7 @@ else {
                 workout.name = $('.myWorkout').find('[name="workoutName"]').val()
                 let workoutSerial = JSON.stringify(myWorkouts);
                 localStorage.setItem("myWorkouts", workoutSerial);
-                window.location.href='/saved-workouts/index.html';
+                window.location.href='saved-workouts/index.html';
             
         }
 
