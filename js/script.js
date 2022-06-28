@@ -370,7 +370,7 @@ else {
                 myWorkouts.pop(workout);
                 let workoutSerial = JSON.stringify(myWorkouts);
                 localStorage.setItem("myWorkouts", workoutSerial);
-                window.location.href='/saved-workouts/index.html';
+                window.location.href='saved-workouts/index.html';
     
             });
         };
